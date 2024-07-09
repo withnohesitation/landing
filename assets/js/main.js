@@ -39,47 +39,144 @@ gsap.to('.sc-hero .hero-ticker ul',10,{
     ease:"none"
 })
 
-gsap.to('.sc-work .project-container .project-list',{
-    scrollTrigger:{
-        trigger:'.sc-work .project-container', //기준 
-        start:"0% 0%",
-        end:"100% 100%", 
-        //markers: true,
-        scrub:0,
-    },
-    xPercent: -110
-})
+//work slide
+let mmWorkslide = gsap.matchMedia();
+
+    mmWorkslide.add("(min-width: 1024px)", () => {
+
+    gsap.to('.sc-work .project-container .project-list',{
+        scrollTrigger:{
+            trigger:'.sc-work .project-container', //기준 
+            start:"0% 0%",
+            end:"100% 100%", 
+            //markers: true,
+            scrub:0,
+            invalidateOnRefresh:true,
+        },
+        x:function(){
+            return window.innerWidth/2;
+        },
+        xPercent: -80
+    })
+
+
+    });
+
+    mmWorkslide.add("(max-width: 1023px)", () => {
+
+    });
+
+
+
+
+
+//work cursor
+
+let mmWorkcursor = gsap.matchMedia();
+
+    mmWorkcursor.add("(min-width: 1024px)", () => {
+
+        $('.sc-work .inner').mousemove(function(e){
+            gsap.to($(this).find('.hover-cursor'), {
+                opacity:1,
+                x:e.clientX,
+                y:e.clientY,
+            })
+        })
+        
+        $('.sc-work .inner').mouseleave(function(e){
+            gsap.to($(this).find('.hover-cursor'), {
+                opacity:0,
+                x:e.clientX,
+                y:e.clientY,
+            })
+        })
+        
+        $('.sc-work .inner .btn-shortcut').mouseover(function(){
+            $('.hover-cursor').addClass('on');
+        })
+        $('.sc-work .inner .btn-shortcut').mouseout(function(){
+            $('.hover-cursor').removeClass('on');
+        })
+
+
+    });
+
+    mmWorkcursor.add("(max-width: 1023px)", () => {
+
+    });
+
 
 //work
-const workTitle = new SplitType('.sc-work .text-container .col-left .title', { types: 'words, chars', });
+let mmwork = gsap.matchMedia();
 
-a = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.sc-work .text-container',
-        start: "0% 80%",
-        end: "100% 80%",
-        scrub:true,
-        //markers:true,
-    },
-})
+    mmwork.add("(min-width: 1024px)", () => {
 
-a.from('.sc-work .text-container .col-left .title .char',{
-    duration:1,
-    yPercent:100,
-    stagger:0.1,
-})
-a.from('.sc-work .text-container .col-right .state',{
-    delay:1.5,
-    yPercent:100,
-    stagger:0.1,
-    duration:1,
+        const workTitle = new SplitType('.sc-work .text-container .col-left .title', { types: 'words, chars', });
 
-})
-a.from('.sc-work .text-container .col-right .desc',{
-    delay:1.5,
-    yPercent:100,
-    stagger:0.1,
-    duration:1,
+        a = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.sc-work .text-container',
+                start: "0% 80%",
+                end: "100% 80%",
+                scrub:true,
+                //markers:true,
+            },
+        })
+        
+        a.from('.sc-work .text-container .col-left .title .char',{
+            duration:1,
+            yPercent:100,
+            stagger:0.2,
+        })
+        a.from('.sc-work .text-container .col-right .state .text',{
+            delay:5,
+            yPercent:100,
+            duration:1,
+        
+        })
+        a.from('.sc-work .text-container .col-right .desc .text',{
+            delay:1.5,
+            yPercent:100,
+            stagger:0.1,
+            duration:1,
+        
+        })
+    
 
-})
+    });
+
+    mmwork.add("(max-width: 1023px)", () => {
+
+    });
+
+
+
+let mmcontact = gsap.matchMedia();
+
+    mmcontact.add("(min-width: 1024px)", () => {
+
+        
+    contactCircleTl = gsap.timeline({
+        scrollTrigger:{
+            trigger:'.sc-contact', //기준 
+            start:"0% 0%",
+            end:"100% 100%", 
+            //markers: true,
+            scrub:0,
+        },
+        
+
+    })
+    contactCircleTl.to('.sc-contact .circles-item:nth-child(1)',{'clip-path': 'circle(100%)'},'a')
+    contactCircleTl.to('.sc-contact .circles-item:nth-child(2)',{'clip-path': 'circle(100%)'},'a+=0.1')
+    contactCircleTl.to('.sc-contact .circles-item:nth-child(3)',{'clip-path': 'circle(100%)'},'a+=0.2')
+    contactCircleTl.to('.sc-contact .circles-item:nth-child(4)',{'clip-path': 'circle(100%)'},'a+=0.3')
+    contactCircleTl.to('.sc-contact .contents',{'clip-path': 'circle(100%)'},'a+=0.4')
+
+    });
+
+    mmcontact.add("(max-width: 1023px)", () => {
+
+    });
 

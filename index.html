@@ -4,7 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>CHE111</title>
+    <title>CHE PORTFOLIO</title>
+    <meta name="Description" content="최혜은 웹퍼블리셔 포트폴리오, Web-Publisher PORTFOLIO">
+	<meta name="Author" content="최혜은">
+	<meta name="Keywords" content="웹퍼블리셔, 프론트앤드, 웹퍼블리셔 포트폴리오">
+	<meta name="Robots" content="ALL">
+	<meta property="og:type" content="Website"/>
+	<meta property="og:title" content="PORTFOLIO"/>
+	<meta property="og:url" content="https://withnohesitation.github.io/landing"/>
+	<meta property="og:description" content="2024 CHE PORTFOLIO | Web-Publisher"/>
+	<meta property="og:image" content="/assets/images/philip-oroni-VKIXwWsRwt4-unsplash.jpg">
+	<meta property="og:site_name" content="2024 CHE PORTFOLIO | Web-Publisher"/>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/gsap.js"></script>
@@ -22,16 +38,22 @@
                 <time class="h-time"></time>
                 <nav class="gnb">
                     <ul>
-                        <li><a href="#sc-work">work</a></li>
-                        <li><a href="#sc-contact">contact</a></li>
+                        <li><a href="#work">work</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+
         <main id="main" class="container">
             <section class="sc-hero">
                 <div class="hero-content">
                     <div class="hero-ticker">
+                        <ul>
+                            <li>
+                                I am absolutely fully capable
+                            </li>
+                        </ul>
                         <ul>
                             <li>
                                 I am absolutely fully capable
@@ -53,24 +75,28 @@
                     <img src="./assets/images/philip-oroni-VKIXwWsRwt4-unsplash.jpg" alt="philip-oroni">
                 </div>
             </section>
-            <section class="sc-work" id="sc-work">
+
+            <section class="sc-work" id="work">
                 <div class="text-container">
                     <span class="object"><img src="./assets/images/behance-663957f117ad8.png" alt></span>
                     <div class="col-left">
                         <h2 class="title">Work</h2>
                     </div>
                     <div class="col-right">
-                        <p class="state"><strong class="num">5</strong>completed projects</p>
+                        <p class="state">
+                            <span class="text"><strong class="num">5</strong>completed projects</span>
+                        </p>
                         <p class="desc">
-                            <span>웹 표준을 준수하고 접근성을 고려해 퍼블리싱 프로젝트를 진행했습니다.</span>
+                            <span class="text">웹 표준을 준수하고 접근성을 고려해 퍼블리싱 프로젝트를 진행했습니다.</span>
                         </p>
                     </div>
                 </div>
                 <div class="project-container">
                     <div class="inner">
+                        <div class="hover-cursor">View</div>
                         <ul class="project-list">
                             <li class="project-item">
-                                <div class="item-wrap">
+                                <a href="https://withnohesitation.github.io/WORK3" class="active-box" target="_blank">
                                     <div class="thumb">
                                         <img src="./assets/images/ub.png" alt="urbanmove">
                                         <ul class="category">
@@ -82,16 +108,14 @@
                                         </ul>
                                     </div>
                                     <div class="info">
-                                        <div class="info-main">
-                                            <h3 class="title">URBANMOVE</h3>
-                                            <p class="desc">Gsap 라이브러리를 활용해 인터렉션을 구현한 프로젝트입니다.</p>
-                                        </div>
-                                        <a href="" class="btn-shortcut" role="button">Code review</a>
+                                        <h3 class="title">URBANMOVE</h3>
+                                        <p class="desc">Gsap 라이브러리를 활용해 인터렉션을 구현한 프로젝트입니다.</p>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="https://github.com/withnohesitation/WORK3" target="_blank" class="btn-shortcut" role="button">Code review</a>
                             </li>
                             <li class="project-item">
-                                <div class="item-wrap">
+                                <a href="https://withnohesitation.github.io/WORK2" class="active-box" target="_blank">
                                     <div class="thumb">
                                         <img src="./assets/images/props.png" alt="props">
                                         <ul class="category">
@@ -103,37 +127,32 @@
                                         </ul>
                                     </div>
                                     <div class="info">
-                                        <div class="info-main">
-                                            <h3 class="title">PROPS</h3>
-                                            <p class="desc">Gsap, ScrollTrigger를 활용해 다양한 인터렉션을 구현한 프로젝트입니다.</p>
-                                        </div>
-                                        <a href="" class="btn-shortcut" role="button">Code review</a>
+                                        <h3 class="title">PROPS</h3>
+                                        <p class="desc">시멘틱 마크업과 SCSS를 통한 효율적인 화면 구현에 중점을 둔 프로젝트입니다.</p>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="https://github.com/withnohesitation/WORK2" target="_blank" class="btn-shortcut" role="button">Code review</a>
                             </li>
                             <li class="project-item">
-                                <div class="item-wrap">
+                                <a href="https://withnohesitation.github.io/WORK5" class="active-box" target="_blank">
                                     <div class="thumb">
                                         <img src="./assets/images/tag.png" alt="TAG Heuer">
                                         <ul class="category">
                                             <li class="highlighted">PC</li>
-                                            <li>반응형</li>
                                             <li>Gsap</li>
-                                            <li>canvas</li>
+                                            <li>ScrollTrigger</li>
                                             <li>SCSS</li>
                                         </ul>
                                     </div>
                                     <div class="info">
-                                        <div class="info-main">
-                                            <h3 class="title">TAG Heuer</h3>
-                                            <p class="desc">시멘틱 마크업과 SCSS를 통한 효율적인 화면 구현에 중점을 둔 프로젝트입니다.</p>
-                                        </div>
-                                        <a href="" class="btn-shortcut" role="button">Code review</a>
+                                        <h3 class="title">TAG Heuer</h3>
+                                        <p class="desc">Gsap, ScrollTrigger를 활용해 다양한 인터렉션을 구현한 프로젝트입니다.</p>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="https://github.com/withnohesitation/WORK5" target="_blank" class="btn-shortcut" role="button">Code review</a>
                             </li>
                             <li class="project-item">
-                                <div class="item-wrap">
+                                <a href="https://withnohesitation.github.io/WORK1" class="active-box" target="_blank">
                                     <div class="thumb">
                                         <img src="./assets/images/naver.png" alt="Naver">
                                         <ul class="category">
@@ -144,16 +163,14 @@
                                         </ul>
                                     </div>
                                     <div class="info">
-                                        <div class="info-main">
-                                            <h3 class="title">Naver</h3>
-                                            <p class="desc">시멘틱 태그를 활용한 마크업에 중점을 둔 네이버 클론코딩 프로젝트입니다.</p>
-                                        </div>
-                                        <a href="" class="btn-shortcut" role="button">Code review</a>
-                                    </div>
-                                </div>
+                                        <h3 class="title">Naver</h3>
+                                        <p class="desc">시멘틱 태그를 활용한 마크업에 중점을 둔 네이버 클론코딩 프로젝트입니다.</p>
+                                    </div>  
+                                </a>
+                                <a href="https://github.com/withnohesitation/WORK1" target="_blank" class="btn-shortcut" role="button">Code review</a>
                             </li>
                             <li class="project-item">
-                                <div class="item-wrap">
+                                <a href="https://withnohesitation.github.io/WORK4" class="active-box" target="_blank">
                                     <div class="thumb">
                                         <img src="./assets/images/mp.png" alt="Mnet Plus">
                                         <ul class="category">
@@ -166,59 +183,59 @@
                                         </ul>
                                     </div>
                                     <div class="info">
-                                        <div class="info-main">
-                                            <h3 class="title">Mnet PLUS</h3>
-                                            <p class="desc">JSON 비동기식 통신을 활용한 데이터 바인딩이 반영된 모바일 프로젝트입니다.</p>
-                                        </div>
-                                        <a href="" class="btn-shortcut" role="button">
-                                            Code review
-                                        </a>
+                                        <h3 class="title">Mnet PLUS</h3>
+                                        <p class="desc">JSON 비동기식 통신을 활용한 데이터 바인딩이 반영된 모바일 프로젝트입니다.</p>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="https://github.com/withnohesitation/WORK4" target="_blank" class="btn-shortcut" target="_blank" role="button">
+                                    Code review
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section class="sc-contact" id="sc-contact">
+            <section class="sc-contact" id="contact">
                 <h2 class="blind">contact</h2>
                 <div class="scroll-board">
-                    <div class="board-wrapper">
-                        <div class="board-text">
-                            <h2 class="title">Let's work together!</h2>
-                            <p class="desc">scrolling more..</p>
-                        </div>
-                        <div class="board-circles">
+                        <div class="board-wrapper">
+                            <div class="board-text">
+                                <h2 class="title">Let's work together!</h2>
+                                <p class="desc">scrolling more..</p>
+                            </div> 
                             <ul class="circles-list">
                                 <li class="circles-item"></li>
                                 <li class="circles-item"></li>
                                 <li class="circles-item"></li>
                                 <li class="circles-item"></li>
                             </ul>
-                        </div>
-                        <div class="board-content">
-                            <div class="content-wrap">
-                                <p>
-                                    <span class="deco">Web-Publisher, Front-End-Developer, and more!</span>
-                                    도전을 주저하지 않는, 끊임없이 성장하는 웹퍼블리셔가 되겠습니다
-                                </p>
-                                <div class="star">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-                                        <path d="M496.398.001C495.423 280.462 276.399 509.551 0 526.59v2.027c266.073 16.404 478.978 229.308 495.385 495.382h2.027C514.455 747.605 743.541 528.58 1024 527.604 733.062 526.591 497.409 290.936 496.398.001z"></path>
-                                    </svg>
-                                </div>
-                                <div class="contact-box">
-                                    <h3 class="title">CONTACT</h3>
-                                    <ul>
-                                        <li><a href="">Github</a></li>
-                                        <li><a href="mailto:oursecondwind@naver.com">Email</a></li>
-                                        <li><a href="tel:+82 10-9920-2909">Tel</a></li>
-                                    </ul>
+                            <div class="contents">
+                                <div class="board-content">
+                                    <div class="content-wrap">
+                                        <p>
+                                            <span class="deco">Web-Publisher, Front-End-Developer, and more!</span>
+                                            도전을 주저하지 않는,
+                                             끊임없이 성장하는
+                                             웹퍼블리셔가 되겠습니다
+                                        </p>
+                                        <div class="star">
+                                            <img src="./assets/images/contact1.jpg" alt>
+                                        </div>
+                                        <div class="contact-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+                                                <path d="M496.398.001C495.423 280.462 276.399 509.551 0 526.59v2.027c266.073 16.404 478.978 229.308 495.385 495.382h2.027C514.455 747.605 743.541 528.58 1024 527.604 733.062 526.591 497.409 290.936 496.398.001z"></path>
+                                            </svg>
+                                            <ul>
+                                                <li><a href="https://github.com/withnohesitation?tab=repositories" target="_blank">Github</a></li>
+                                                <li><a href="mailto:oursecondwind@naver.com">Email</a></li>
+                                                <li><a href="tel:+82 10-9920-2909">Tel</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </section>
         </main>

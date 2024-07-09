@@ -3,8 +3,7 @@
     top: 0;
     left: 0;
     z-index: 100;
-    width: 100%;
-    transition: .5s;
+    width: 100vw;
     &.hide {
     transform: translateY(-100%);
     }
@@ -14,24 +13,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 32px 32px;
+    @include mobile {
+        padding: 16px;
+    }
+    
 }
 .h-logo {
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 .h-time {
     border: 1px solid var(--orange);
-    border-radius: 30px;
-    padding: 8px 12px;
-    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
     position: absolute;
-    top: 1.8rem;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
+    @include mobile {
+        display: none;   
+    }
 }
 .gnb {
     ul {
         display: flex;
-        gap: 8px;
+        gap: 12px;
+    }
+    li {
+        font-size: 18px;
     }
 }

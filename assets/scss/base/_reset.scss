@@ -2,11 +2,14 @@
     --orange: #ff6b00;
     --black: black;
     --gray: #d9d9d9;
+
+    --header-pc: 84.5px;
+    --header-mobile: 52.5px;
 }
 *{margin:0;padding:0;font:inherit;color:inherit;}
 *, :after, :before {box-sizing:border-box;}
 :root {-webkit-tap-highlight-color:transparent;
-    -webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.2;/*수정*/
+    -webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;
     overflow-wrap:break-word;-moz-tab-size:4;tab-size:4
 }
 html, body {height:100%;}
@@ -17,10 +20,13 @@ table {border-collapse:collapse;border-spacing:0}
 ul {
     list-style: none;
 }
+html {
+    font-size: 62.5%;
+}
 body {
     font-family: $font-basic;
     font-weight: 500;
     background: var(--black);
     color: var(--orange);
-    font-size: 16px;
+    font-size: 1.2rem;
 }

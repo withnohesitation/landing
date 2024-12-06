@@ -22,9 +22,36 @@
     src: url(../font/Aeonik-Medium-a584ebd29a0626ccf36df98f5c031dcf.woff2) format("woff2");
     font-weight: 500;
 }
+@font-face {
+    font-family: 'Huben';
+    src: url(../font/6538fb7e6400c00eb7ecf5f1_Huben-Regular.otf) format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'de';
+    src: url(../font/45c7e5f62fcd5e3e-s.p.woff2) format("woff2");
+}
+@font-face {
+    font-family: 'des';
+    src: url(../font/6450cfaf2cf7286c67f506d7_PPMori-SemiBold.woff) format("woff");
+}
+@font-face {
+    font-family: 'dew';
+    src: url(../font/9431a58d2dabef30-s.p.woff2) format("woff2");
+}
 
 //한글
-
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Thin.otf) format('opentype');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-ExtraLight.otf) format('opentype');
+    font-weight: 200;
+}
 @font-face {
     font-family: 'Pretendard';
     src: url(../font/Pretendard-Light.otf) format('opentype');

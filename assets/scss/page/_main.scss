@@ -634,7 +634,6 @@
             width: 100%;
             min-height: 100vh;
             clip-path: circle(0%);
-            z-index: 101;
             @include tablet {
                 clip-path: none;
                 position: static;
@@ -757,7 +756,6 @@
             color: #fff;
             padding: 3.2rem 0;
             @include tablet {
-                z-index: 100;
                 padding: 6rem 0;
             }
             @include mobile {

@@ -32,10 +32,10 @@
 </head>
 <body>
     <!--로딩-->
-    <div class="loading" style="height: 100vh; z-index: 100;">
-        <div class="loading-wrap">
+    <div class="loading" style="height: 100vh; z-index: 999;">
+        <div class="loading-wrap" style="background: #000;">
             <div class="loading-bg">
-                <video autoplay="" loop="" muted="muted" playsinline="" data-object-fit="cover" poster="">
+                <video autoplay loop muted="muted" data-object-fit="cover" poster>
                     <source src="./assets/video/landing_intro.mp4">
                 </video>
             </div>
@@ -53,320 +53,326 @@
             </p>
         </div>
     </div>
-    <!--헤더-->
-    <div class="main-cursor"></div>
-    <header id="header">
-        <div class="header-wrap">
-            <a href="" class="h-logo">CHE<em class="deco">®</em>
-            </a>
-            <div class="h-time">
-                <span class="blind">한국 현재 표준시</span>
-                <em>KST</em>
-                <time class="ko-time"></time>
-            </div>
-            <nav class="gnb">
-                <ul>
-                    <li><a href="#work">work</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
+
+    <div class="wrap-area">
+        <!--헤더-->
+        <div class="main-cursor"></div>
+        <div class="cursor-follower">
         </div>
-    </header>
-    <!--메인-->
-    <main id="main" class="container">
-        <section class="sc-hero">
-            <div class="hero-content">
-                <div class="hero-ticker">
+        <header id="header">
+            <div class="header-wrap">
+                <a href="" class="h-logo">CHE<em class="deco">®</em>
+                </a>
+                <div class="h-time">
+                    <span class="blind">한국 현재 표준시</span>
+                    <em>KST</em>
+                    <time class="ko-time"></time>
+                </div>
+                <nav class="gnb">
                     <ul>
-                        <li>
-                            I am absolutely fully capable
-                        </li>
+                        <li><a href="#work">work</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
-                    <ul>
-                        <li>
-                            I am absolutely fully capable
-                        </li>
-                    </ul>
-                </div>
-                <h1 class="hero-text">
-                    <div class="name">
-                        <span class="blind">이름:</span>Choi Hyeeun
-                    </div>
-                    <div class="desc">
-                        <span class="deco">passionate</span> about web development,
-                        constantly seeking to <span class="deco">learn and improve</span> my skills,
-                        enjoy working <span class="deco">collaboratively</span> with others to achieve our shared goals!
-                    </div>
-                </h1>
+                </nav>
             </div>
-            <div class="hero-media">
-                <video autoplay="" loop="" muted="muted" playsinline="" data-object-fit="cover" poster="">
-                    <source src="./assets/video/landing_hero.mp4">
-                </video>
-            </div>
-        </section>
-        <section class="sc-work scroll" id="work">
-            <div class="text-container" data-scroll="paragraph">
-                <div class="title-wrap">
-                    <div class="wrapper">
-                        <h2 class="title">Work</h2>
-                        <span class="deco"></span>
-                        <p class="state"><strong class="num">5</strong>completed projects</p>
-                    </div>
-                </div>
-                <p class="desc">
-                    웹 표준을 준수하고 접근성을 고려해 퍼블리싱 프로젝트를 진행했습니다.
-                    <br>더불어 여러 플러그인을 사용해 동적인 효과를 주어 사용자가 풍부한 경험을 할 수 있도록 구현하였습니다.
-                </p>
-            </div>
-            <div class="project-container">
-                <div class="inner">
-                    <div class="col-left">
-                        <div class="thumb-wrap">
-                            <a href="https://withnohesitation.github.io/WORK3/" class="thumb-box on" target="_blank">
-                                <img src="./assets/images/mockup_urban.jpg" alt="urbanmove">
-                            </a>
-                            <a href="https://withnohesitation.github.io/WORK2/" class="thumb-box" target="_blank">
-                                <img src="./assets/images/mockup_props.jpg" alt="props">
-                            </a>
-                            <a href="https://withnohesitation.github.io/WORK5/" class="thumb-box" target="_blank">
-                                <img src="./assets/images/mockup_tag.jpg" alt="TAGHEUER">
-                            </a>
-                            <a href="https://withnohesitation.github.io/WORK1/" class="thumb-box" target="_blank">
-                                <img src="./assets/images/mockup_naver.jpg" alt="naver">
-                            </a>
-                            <a href="https://withnohesitation.github.io/WORK4/" class="thumb-box" target="_blank">
-                                <img src="./assets/images/mockup_mnet.jpg" alt="mnet plus">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-right">
-                        <div class="text-wrap">
-                            <div class="text-box">
-                                <div class="thumb-m">
-                                    <img src="./assets/images/mockup_urban.jpg" alt="urbanmove">
-                                </div>
-                                <div class="title-area">
-                                    <a href="https://withnohesitation.github.io/WORK3/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
-                                        <h3 class="title">Urbanmove</h3>
-                                        <span class="deco">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-                                                <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                    <ul class="category">
-                                        <li class="highlighted">PC</li>
-                                        <li>반응형</li>
-                                        <li>SCSS</li>
-                                    </ul>
-                                </div>
-                                <ul class="info-area" data-scroll="paragraph3">
-                                    <li>
-                                        <em>제작기간</em>
-                                        7일
-                                    </li>
-                                    <li>
-                                        <em>기여도</em>
-                                        100%
-                                    </li>
-                                    <li><em>SKILL</em>Jquery, GSAP, ScrollTrigger</li>
-                                    <li><span class="blind">설명:</span>Gsap 라이브러리를 활용해 인터렉션을 구현한 프로젝트입니다.</li>
-                                    <li> <a href="https://github.com/withnohesitation/WORK3" class="btn-link" target="_blank">Code review</a> </li>
-                                </ul>
-                            </div>
-                            <div class="text-box">
-                                <div class="thumb-m">
-                                    <img src="./assets/images/mockup_props.jpg" alt="props">
-                                </div>
-                                <div class="title-area">
-                                    <a href="https://withnohesitation.github.io/WORK2/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
-                                        <h3 class="title">props</h3>
-                                        <span class="deco">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-                                                <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                    <ul class="category">
-                                        <li class="highlighted">PC</li>
-                                        <li>반응형</li>
-                                        <li>SCSS</li>
-                                    </ul>
-                                </div>
-                                <ul class="info-area" data-scroll="paragraph3">
-                                    <li>
-                                        <em>제작기간</em>
-                                        9일
-                                    </li>
-                                    <li>
-                                        <em>기여도</em>
-                                        100%
-                                    </li>
-                                    <li><em>SKILL</em>Jquery, GSAP, ScrollTrigger</li>
-                                    <li><span class="blind">설명:</span>시멘틱 마크업과 SCSS를 통한 효율적인 화면 구현에 중점을 둔 프로젝트입니다.</li>
-                                    <li> <a href="https://github.com/withnohesitation/WORK2" class="btn-link" target="_blank">Code review</a> </li>
-                                </ul>
-                            </div>
-                            <div class="text-box">
-                                <div class="thumb-m">
-                                    <img src="./assets/images/mockup_tag.jpg" alt="TAGHEUER">
-                                </div>
-                                <div class="title-area">
-                                    <a href="https://withnohesitation.github.io/WORK5/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
-                                        <h3 class="title">TAGHEUER</h3>
-                                        <span class="deco">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-                                                <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                    <ul class="category">
-                                        <li class="highlighted">PC</li>
-                                        <li>SCSS</li>
-                                    </ul>
-                                </div>
-                                <ul class="info-area" data-scroll="paragraph3">
-                                    <li>
-                                        <em>제작기간</em>
-                                        10일
-                                    </li>
-                                    <li>
-                                        <em>기여도</em>
-                                        100%
-                                    </li>
-                                    <li><em>SKILL</em>Jquery, GSAP, ScrollTrigger</li>
-                                    <li><span class="blind">설명:</span>Gsap, ScrollTrigger를 활용해 동적인 효과를 구현한 프로젝트입니다.</li>
-                                    <li> <a href="https://github.com/withnohesitation/WORK5" class="btn-link" target="_blank">Code review</a> </li>
-                                </ul>
-                            </div>
-                            <div class="text-box">
-                                <div class="thumb-m">
-                                    <img src="./assets/images/mockup_naver.jpg" alt="naver">
-                                </div>
-                                <div class="title-area">
-                                    <a href="https://withnohesitation.github.io/WORK1/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
-                                        <h3 class="title">naver</h3>
-                                        <span class="deco">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-                                                <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                    <ul class="category">
-                                        <li class="highlighted">PC</li>
-                                        <li>SCSS</li>
-                                    </ul>
-                                </div>
-                                <ul class="info-area" data-scroll="paragraph3">
-                                    <li>
-                                        <em>제작기간</em>
-                                        4일
-                                    </li>
-                                    <li>
-                                        <em>기여도</em>
-                                        100%
-                                    </li>
-                                    <li><em>SKILL</em>Semantic Tag, Web Accessibility </li>
-                                    <li><span class="blind">설명:</span>시멘틱 태그를 활용한 마크업에 중점을 둔 네이버 클론코딩 프로젝트입니다.</li>
-                                    <li> <a href="https://github.com/withnohesitation/WORK1" class="btn-link" target="_blank">Code review</a> </li>
-                                </ul>
-                            </div>
-                            <div class="text-box">
-                                <div class="thumb-m">
-                                    <img src="./assets/images/mockup_mnet.jpg" alt="mnet plus">
-                                </div>
-                                <div class="title-area">
-                                    <a href="https://withnohesitation.github.io/WORK4/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
-                                        <h3 class="title">mnet plus</h3>
-                                        <span class="deco">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-                                                <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                    <ul class="category">
-                                        <li class="highlighted">Mobile</li>
-                                        <li>반응형</li>
-                                        <li>SCSS</li>
-                                    </ul>
-                                </div>
-                                <ul class="info-area" data-scroll="paragraph3" >
-                                    <li>
-                                        <em>제작기간</em>
-                                        5일
-                                    </li>
-                                    <li>
-                                        <em>기여도</em>
-                                        100%
-                                    </li>
-                                    <li><em>SKILL</em>API, JSON, GSAP, ScrollTrigger</li>
-                                    <li><span class="blind">설명:</span>API를 활용해 JSON 데이터를 구축하고 Fetch 문법으로 데이터를 연동한 모바일에 최적화된 프로젝트입니다.</li>
-                                    <li> <a href="https://github.com/withnohesitation/WORK4" class="btn-link" target="_blank">Code review</a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sc-contact scroll" id="contact">
-            <h2 class="blind">contact</h2>
-            <div class="scroll-board">
-                    <div class="board-wrapper ">
-                        <div class="board-text">
-                            <h2 class="title">Let's work together!</h2>
-                            <p class="desc">scrolling more..</p>
-                        </div>
-                        <ul class="circles-list ">
-                            <li class="circles-item"></li>
-                            <li class="circles-item"></li>
-                            <li class="circles-item"></li>
-                            <li class="circles-item"></li>
-                            <li class="circles-item"></li>
-                            <li class="circles-item"></li>
-                            <li class="circles-item"></li>
+        </header>
+        <!--메인-->
+        <main id="main" class="container">
+            <section class="sc-hero">
+                <div class="hero-content">
+                    <div class="hero-ticker">
+                        <ul>
+                            <li>
+                                I am absolutely fully capable
+                            </li>
                         </ul>
-                        <div class="contents">
-                            <div class="board-content">
-                                <div class="content-wrap" >
-                                    <strong>
-                                        Web-Publisher, <br> Front-End-Developer, <br> and more!
-                                    </strong>
-                                    <i class="icon-star">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" >
-                                            <path d="M496.398.001C495.423 280.462 276.399 509.551 0 526.59v2.027c266.073 16.404 478.978 229.308 495.385 495.382h2.027C514.455 747.605 743.541 528.58 1024 527.604 733.062 526.591 497.409 290.936 496.398.001z"></path>
-                                        </svg>
-                                    </i>
-                                    <div class="contact-box">
-                                        <div class="profile">
-                                            <em>최혜은 Choi Hye Eun</em>
-                                            <i class="mimoticon">
-                                                <img src="./assets/images/mimo.jpeg" alt="mimoticon">
-                                            </i>
-                                        </div>
-                                        <p>도전을 주저하지 않는, 끊임없이 성장하는 웹퍼블리셔가 되겠습니다</p>
-                                        <ul>
-                                            <li><a href="https://github.com/withnohesitation?tab=repositories" target="_blank">Github</a></li>
-                                            <li><a href="mailto:oursecondwind@naver.com">Email</a></li>
-                                            <li><a href="tel:+82 10-9920-2909">Tel</a></li>
+                        <ul>
+                            <li>
+                                I am absolutely fully capable
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="hero-text">
+                        <div class="name">
+                            <span class="blind">이름:</span>Choi Hyeeun
+                        </div>
+                        <div class="desc">
+                            <span class="deco">passionate</span> about web development,
+                            constantly seeking to <span class="deco">learn and improve</span> my skills,
+                            enjoy working <span class="deco">collaboratively</span> with others to achieve our shared goals!
+                        </div>
+                    </h1>
+                </div>
+                <div class="hero-media">
+                    <video autoplay="" loop="" muted="muted" playsinline="" data-object-fit="cover" poster="">
+                        <source src="./assets/video/landing_hero.mp4">
+                    </video>
+                </div>
+            </section>
+            <section class="sc-work scroll" id="work">
+                <div class="text-container" data-scroll="paragraph">
+                    <div class="title-wrap">
+                        <div class="wrapper">
+                            <h2 class="title">Work</h2>
+                            <span class="deco"></span>
+                            <p class="state"><strong class="num">5</strong>completed projects</p>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        웹 표준을 준수하고 접근성을 고려해 퍼블리싱 프로젝트를 진행했습니다.
+                        <br>더불어 여러 플러그인을 사용해 동적인 효과를 주어 사용자가 풍부한 경험을 할 수 있도록 구현하였습니다.
+                    </p>
+                </div>
+                <div class="project-container">
+                    <div class="inner">
+                        <div class="col-left">
+                            <div class="thumb-wrap">
+                                <a href="https://withnohesitation.github.io/WORK3/" class="thumb-box on" target="_blank">
+                                    <img src="./assets/images/mockup_urban.jpg" alt="urbanmove">
+                                </a>
+                                <a href="https://withnohesitation.github.io/WORK2/" class="thumb-box" target="_blank">
+                                    <img src="./assets/images/mockup_props.jpg" alt="props">
+                                </a>
+                                <a href="https://withnohesitation.github.io/WORK5/" class="thumb-box" target="_blank">
+                                    <img src="./assets/images/mockup_tag.jpg" alt="TAGHEUER">
+                                </a>
+                                <a href="https://withnohesitation.github.io/WORK1/" class="thumb-box" target="_blank">
+                                    <img src="./assets/images/mockup_naver.jpg" alt="naver">
+                                </a>
+                                <a href="https://withnohesitation.github.io/WORK4/" class="thumb-box" target="_blank">
+                                    <img src="./assets/images/mockup_mnet.jpg" alt="mnet plus">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-right">
+                            <div class="text-wrap">
+                                <div class="text-box">
+                                    <a href="https://withnohesitation.github.io/WORK3/" target="_blank" class="thumb-m">
+                                        <img src="./assets/images/mockup_urban.jpg" alt="urbanmove">
+                                    </a>
+                                    <div class="title-area">
+                                        <a href="https://withnohesitation.github.io/WORK3/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
+                                            <h3 class="title">Urbanmove</h3>
+                                            <span class="deco">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                                    <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <ul class="category">
+                                            <li class="highlighted">PC</li>
+                                            <li>반응형</li>
+                                            <li>SCSS</li>
                                         </ul>
+                                    </div>
+                                    <ul class="info-area" data-scroll="paragraph3">
+                                        <li>
+                                            <em>제작기간</em>
+                                            7일
+                                        </li>
+                                        <li>
+                                            <em>기여도</em>
+                                            100%
+                                        </li>
+                                        <li><em>SKILL</em>Jquery, GSAP, ScrollTrigger</li>
+                                        <li><span class="blind">설명:</span>Gsap 라이브러리를 활용해 인터렉션을 구현한 프로젝트입니다.</li>
+                                        <li> <a href="https://github.com/withnohesitation/WORK3" class="btn-link" target="_blank">Code review</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="text-box">
+                                    <a href="https://withnohesitation.github.io/WORK2/" target="_blank" class="thumb-m">
+                                        <img src="./assets/images/mockup_props.jpg" alt="props">
+                                    </a>
+                                    <div class="title-area">
+                                        <a href="https://withnohesitation.github.io/WORK2/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
+                                            <h3 class="title">props</h3>
+                                            <span class="deco">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                                    <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <ul class="category">
+                                            <li class="highlighted">PC</li>
+                                            <li>반응형</li>
+                                            <li>SCSS</li>
+                                        </ul>
+                                    </div>
+                                    <ul class="info-area" data-scroll="paragraph3">
+                                        <li>
+                                            <em>제작기간</em>
+                                            9일
+                                        </li>
+                                        <li>
+                                            <em>기여도</em>
+                                            100%
+                                        </li>
+                                        <li><em>SKILL</em>Jquery, GSAP, ScrollTrigger</li>
+                                        <li><span class="blind">설명:</span>시멘틱 마크업과 SCSS를 통한 효율적인 화면 구현에 중점을 둔 프로젝트입니다.</li>
+                                        <li> <a href="https://github.com/withnohesitation/WORK2" class="btn-link" target="_blank">Code review</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="text-box">
+                                    <a href="https://withnohesitation.github.io/WORK5/" target="_blank" class="thumb-m">
+                                        <img src="./assets/images/mockup_tag.jpg" alt="TAGHEUER">
+                                    </a>
+                                    <div class="title-area">
+                                        <a href="https://withnohesitation.github.io/WORK5/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
+                                            <h3 class="title">TAGHEUER</h3>
+                                            <span class="deco">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                                    <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <ul class="category">
+                                            <li class="highlighted">PC</li>
+                                            <li>SCSS</li>
+                                        </ul>
+                                    </div>
+                                    <ul class="info-area" data-scroll="paragraph3">
+                                        <li>
+                                            <em>제작기간</em>
+                                            10일
+                                        </li>
+                                        <li>
+                                            <em>기여도</em>
+                                            100%
+                                        </li>
+                                        <li><em>SKILL</em>Jquery, GSAP, ScrollTrigger</li>
+                                        <li><span class="blind">설명:</span>Gsap, ScrollTrigger를 활용해 동적인 효과를 구현한 프로젝트입니다.</li>
+                                        <li> <a href="https://github.com/withnohesitation/WORK5" class="btn-link" target="_blank">Code review</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="text-box">
+                                    <a href="https://withnohesitation.github.io/WORK1/" target="_blank" class="thumb-m">
+                                        <img src="./assets/images/mockup_naver.jpg" alt="naver">
+                                    </a>
+                                    <div class="title-area">
+                                        <a href="https://withnohesitation.github.io/WORK1/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
+                                            <h3 class="title">naver</h3>
+                                            <span class="deco">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                                    <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <ul class="category">
+                                            <li class="highlighted">PC</li>
+                                            <li>SCSS</li>
+                                        </ul>
+                                    </div>
+                                    <ul class="info-area" data-scroll="paragraph3">
+                                        <li>
+                                            <em>제작기간</em>
+                                            4일
+                                        </li>
+                                        <li>
+                                            <em>기여도</em>
+                                            100%
+                                        </li>
+                                        <li><em>SKILL</em>Semantic Tag, Web Accessibility </li>
+                                        <li><span class="blind">설명:</span>시멘틱 태그를 활용한 마크업에 중점을 둔 네이버 클론코딩 프로젝트입니다.</li>
+                                        <li> <a href="https://github.com/withnohesitation/WORK1" class="btn-link" target="_blank">Code review</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="text-box">
+                                    <a href="https://withnohesitation.github.io/WORK4/" target="_blank" class="thumb-m">
+                                        <img src="./assets/images/mockup_mnet.jpg" alt="mnet plus">
+                                    </a>
+                                    <div class="title-area">
+                                        <a href="https://withnohesitation.github.io/WORK4/" class="link-site" data-scroll="paragraph2" aria-label="사이트 바로가기" target="_blank">
+                                            <h3 class="title">mnet plus</h3>
+                                            <span class="deco">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                                    <path d="M19.2928932,4 L16.5,4 C16.2238576,4 16,3.77614237 16,3.5 C16,3.22385763 16.2238576,3 16.5,3 L20.5,3 C20.7761424,3 21,3.22385763 21,3.5 L21,7.5 C21,7.77614237 20.7761424,8 20.5,8 C20.2238576,8 20,7.77614237 20,7.5 L20,4.70710678 L14.8535534,9.85355339 C14.6582912,10.0488155 14.3417088,10.0488155 14.1464466,9.85355339 C13.9511845,9.65829124 13.9511845,9.34170876 14.1464466,9.14644661 L19.2928932,4 L19.2928932,4 Z M20,11.5 C20,11.2238576 20.2238576,11 20.5,11 C20.7761424,11 21,11.2238576 21,11.5 L21,18.5 C21,19.8807119 19.8807119,21 18.5,21 L5.5,21 C4.11928813,21 3,19.8807119 3,18.5 L3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L12.5,3 C12.7761424,3 13,3.22385763 13,3.5 C13,3.77614237 12.7761424,4 12.5,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,18.5 C4,19.3284271 4.67157288,20 5.5,20 L18.5,20 C19.3284271,20 20,19.3284271 20,18.5 L20,11.5 Z"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <ul class="category">
+                                            <li class="highlighted">Mobile</li>
+                                            <li>반응형</li>
+                                            <li>SCSS</li>
+                                        </ul>
+                                    </div>
+                                    <ul class="info-area" data-scroll="paragraph3" >
+                                        <li>
+                                            <em>제작기간</em>
+                                            5일
+                                        </li>
+                                        <li>
+                                            <em>기여도</em>
+                                            100%
+                                        </li>
+                                        <li><em>SKILL</em>API, JSON, GSAP, ScrollTrigger</li>
+                                        <li><span class="blind">설명:</span>API를 활용해 JSON 데이터를 구축하고 Fetch 문법으로 데이터를 연동한 모바일에 최적화된 프로젝트입니다.</li>
+                                        <li> <a href="https://github.com/withnohesitation/WORK4" class="btn-link" target="_blank">Code review</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-contact scroll" id="contact">
+                <h2 class="blind">contact</h2>
+                <div class="scroll-board">
+                        <div class="board-wrapper" data-scroll="paragraph4">
+                            <div class="board-text">
+                                <h2 class="title">Let's work together!</h2>
+                                <p class="desc">scrolling more..</p>
+                            </div>
+                            <ul class="circles-list ">
+                                <li class="circles-item"></li>
+                                <li class="circles-item"></li>
+                                <li class="circles-item"></li>
+                                <li class="circles-item"></li>
+                                <li class="circles-item"></li>
+                                <li class="circles-item"></li>
+                                <li class="circles-item"></li>
+                            </ul>
+                            <div class="contents">
+                                <div class="board-content">
+                                    <div class="content-wrap" >
+                                        <strong>
+                                            Web-Publisher, <br> Front-End-Developer, <br> and more!
+                                        </strong>
+                                        <i class="icon-star">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" >
+                                                <path d="M496.398.001C495.423 280.462 276.399 509.551 0 526.59v2.027c266.073 16.404 478.978 229.308 495.385 495.382h2.027C514.455 747.605 743.541 528.58 1024 527.604 733.062 526.591 497.409 290.936 496.398.001z"></path>
+                                            </svg>
+                                        </i>
+                                        <div class="contact-box">
+                                            <div class="profile">
+                                                <em>최혜은 Choi Hye Eun</em>
+                                                <i class="mimoticon">
+                                                    <img src="./assets/images/mimo.jpeg" alt="mimoticon">
+                                                </i>
+                                            </div>
+                                            <p>도전을 주저하지 않는, 끊임없이 성장하는 웹퍼블리셔가 되겠습니다</p>
+                                            <ul>
+                                                <li><a href="https://github.com/withnohesitation?tab=repositories" target="_blank">Github</a></li>
+                                                <li><a href="mailto:oursecondwind@naver.com">Email</a></li>
+                                                <li><a href="tel:+82 10-9920-2909">Tel</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-            </div>
-        </section>
-    </main>
-    <!--푸터-->
-    <footer id="footer">
-        <h2 class="blind">CHE PORTFOLIO footer</h2>
-        <a href="" class="f-logo">CHE<em class="deco">®</em></a>
-        <small class="copy">
-            ©2024 All rights reserved.
-        </small>
-    </footer>
+                </div>
+            </section>
+        </main>
+        
+        <!--푸터-->
+        <footer id="footer">
+            <h2 class="blind">CHE PORTFOLIO footer</h2>
+            <a href="" class="f-logo">CHE<em class="deco">®</em></a>
+            <small class="copy">
+                ©2024 All rights reserved.
+            </small>
+        </footer>
+    </div>
 
 </body>
 </html>

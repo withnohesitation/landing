@@ -94,7 +94,53 @@
 
 
 }
+.wrap-area {
+    cursor: none;
+    a {
+        cursor: none;
+    }
 
+    .main-cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 199;
+        width: 10px;
+        height: 10px;
+        background: var(--orange);
+        border-radius: 50%;
+        mix-blend-mode: difference;
+        transition: 0.2s;
+        transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, .2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+        user-select: none; 
+        pointer-events: none;
+        transform: scale(1);
+        cursor: none;
+        &.active {
+            opacity: 1; transform: scale(0);
+        }
+    }
+    .cursor-follower {
+        user-select: none; 
+        pointer-events: none;
+        position: fixed; 
+        border:1px solid var(--gray);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        z-index: 199;
+        transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
+        transform: translate(2px, 2px);
+        mix-blend-mode: difference;
+        &.active {
+            opacity: 1; 
+            transform: scale(2); 
+            border:1px solid var(--orange);
+        }
+    }
+}
 .container {
     margin-top: var(--header-pc);
     @include mobile {
@@ -137,7 +183,7 @@
         line-height: 21.5rem;
         color: var(--orange);
         mix-blend-mode: difference;
-        z-index: 99;
+        z-index: 30;
          ul {
             display: flex;
             li {
@@ -577,32 +623,6 @@
             }
         }
         
-        /*
-        .hover-cursor {
-            opacity: 0;
-            z-index: 1;
-            pointer-events: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 80px;
-            height: 80px;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            background: var(--orange);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #000;
-            font-size: 14px;
-            &.on {
-                display: none;
-            }
-        }
-        */
-
     }
  }
 

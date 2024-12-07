@@ -405,6 +405,71 @@ body {
   }
 }
 
+.wrap-area {
+  cursor: none;
+}
+.wrap-area a {
+  cursor: none;
+}
+.wrap-area .main-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 199;
+  width: 10px;
+  height: 10px;
+  background: var(--orange);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  cursor: none;
+}
+.wrap-area .main-cursor.active {
+  opacity: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.wrap-area .cursor-follower {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  position: fixed;
+  border: 1px solid var(--gray);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 199;
+  -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
+  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+  mix-blend-mode: difference;
+}
+.wrap-area .cursor-follower.active {
+  opacity: 1;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  border: 1px solid var(--orange);
+}
+
 .container {
   margin-top: var(--header-pc);
 }
@@ -473,7 +538,7 @@ body {
   line-height: 21.5rem;
   color: var(--orange);
   mix-blend-mode: difference;
-  z-index: 99;
+  z-index: 30;
 }
 .sc-hero .hero-ticker ul {
   display: -webkit-box;
@@ -784,31 +849,6 @@ body {
   display: flex;
   width: 100%;
   min-height: 100vh;
-  /*
-  .hover-cursor {
-      opacity: 0;
-      z-index: 1;
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 80px;
-      height: 80px;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      background: var(--orange);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #000;
-      font-size: 14px;
-      &.on {
-          display: none;
-      }
-  }
-  */
 }
 @media (max-width: 767px) {
   .sc-work .inner {

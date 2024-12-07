@@ -23,19 +23,58 @@ window.onload = function(){
 }
 
 //커서 
-/*
-const cursorRounded = document.querySelector('.main-cursor');
+$(function(){
+
+    // CURSOR
+    var cursor = $(".main-cursor"),
+        follower = $(".cursor-follower");
+
+    var posX = 0,
+        posY = 0;
+    var mouseX = 0,
+        mouseY = 0;
+
+    TweenMax.to({}, 0.008, { 
+        repeat: -1,
+        onRepeat: function() {
+            posX += (mouseX - posX) / 9;
+            posY += (mouseY - posY) / 9;
+
+            TweenMax.set(follower, {
+                css: {
+                left: posX - 12,
+                top: posY - 12
+                }
+            });
+
+            TweenMax.set(cursor, {
+                css: {
+                left: mouseX,
+                top: mouseY
+                }
+            });
+        }
+    });
+
+    $(".wrap-area").on("mousemove", function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    }).on("mouseenter", function(e) {
+        $(".main-cursor, .cursor-follower").css('opacity', 1);
+    }).on("mouseleave", function(e) {
+        $(".main-cursor, .cursor-follower,").css('opacity', 0);
+    });;
+
+    $("a").on("mouseenter", function() {
+        cursor.addClass("active");
+        follower.addClass("active");
+    }).on("mouseleave", function() {
+        cursor.removeClass("active");
+        follower.removeClass("active");
+    })
+});
 
 
-const moveCursor = (e) => {
-  const mouseY = e.clientY;
-  const mouseX = e.clientX;
-   
-  cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-   
-}
-window.addEventListener('mousemove', moveCursor);
-*/
 //시계
 
 function clock(){
@@ -301,7 +340,6 @@ const contactParagraph2 = new SplitType('.sc-contact .board-content .contact-box
 let pccontact = gsap.matchMedia();
 
     pccontact.add("(min-width: 1025px)", () => {
-
         
     contactCircleTl = gsap.timeline({
         scrollTrigger:{
@@ -324,22 +362,53 @@ let pccontact = gsap.matchMedia();
     contactCircleTl.to('.sc-contact .circles-item:nth-child(7)',{'clip-path': 'circle(100%)'},'a+=0.6')
     contactCircleTl.to('.sc-contact .contents',{'clip-path': 'circle(100%)'},'a+=0.7')
 
+    //  const contactMotion = gsap.timeline({
+    //      paused:true,
+    //  })
 
-    const contactMotion = gsap.timeline({
-        paused:true,
+    //  contactMotion
+    //  .from('.sc-contact .board-content strong .char', {yPercent:100, stagger:0.01})
+    //  .from('.sc-contact .board-content svg', {yPercent:100, stagger:0.01, delay:-.2})
+    //  .from('.sc-contact .board-content .contact-box .word', {yPercent:100, stagger:0.01, delay:-.2})
+    //  .from('.sc-contact .board-content .mimoticon', {yPercent:120})
+
+    //  contactCircleTl.eventCallback ( "onComplete" , function () { 
+    //      contactMotion.play(); });
+
+
+    $('[data-scroll="paragraph4"]').each(function(i, el){
+        scr4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: $(this).find('.contents'),
+                start:"100% -30%",
+                scurb: 0,
+                //markers:true,
+            },
+        })
+        scr4.from ($(this).find('.board-content strong .char'),{yPercent:100, stagger:0.01},'a')
+        scr4.from ($(this).find('.board-content svg'),{yPercent:100, stagger:0.01, delay:-.2},'a+=0.2')
+        scr4.from ($(this).find('.board-content .contact-box .word'),{yPercent:100, stagger:0.01, delay:-.2},'a+=0.4')
+        scr4.from ($(this).find('.board-content .mimoticon'),{yPercent:120},'a+=0.6')
     })
-
-    contactMotion
-    .from('.sc-contact .board-content strong .char', {yPercent:100, stagger:0.01})
-    .from('.sc-contact .board-content svg', {yPercent:100, stagger:0.01, delay:-.2})
-    .from('.sc-contact .board-content .contact-box .word', {yPercent:100, stagger:0.01, delay:-.2})
-    .from('.sc-contact .board-content .mimoticon', {yPercent:120})
-
-    contactCircleTl.eventCallback ( "onComplete" , function () { 
-        contactMotion.play().delay(); });
 
     });
 
     pccontact.add("(max-width: 1024px)", () => {
 
+        $('[data-scroll="paragraph4"]').each(function(i, el){
+            scr4 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: $(this).find('.contents'),
+                    start:"0% 100%",
+                    end:"100% 100%",
+                    scurb: 0,
+                    //markers:true,
+                },
+            })
+            scr4.from ($(this).find('.board-content strong .char'),{yPercent:100, stagger:0.01},'a')
+            scr4.from ($(this).find('.board-content svg'),{yPercent:100, stagger:0.01, delay:-.2},'a+=0.2')
+            scr4.from ($(this).find('.board-content .contact-box .word'),{yPercent:100, stagger:0.01, delay:-.2},'a+=0.4')
+            scr4.from ($(this).find('.board-content .mimoticon'),{yPercent:120},'a+=0.6')
+        })
+    
     });

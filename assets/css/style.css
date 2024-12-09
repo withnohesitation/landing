@@ -443,6 +443,11 @@ body {
   -webkit-transform: scale(0);
           transform: scale(0);
 }
+@media (max-width: 1024px) {
+  .wrap-area .main-cursor {
+    display: none;
+  }
+}
 .wrap-area .cursor-follower {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -468,6 +473,11 @@ body {
   -webkit-transform: scale(2);
           transform: scale(2);
   border: 1px solid var(--orange);
+}
+@media (max-width: 1024px) {
+  .wrap-area .cursor-follower {
+    display: none;
+  }
 }
 
 .container {

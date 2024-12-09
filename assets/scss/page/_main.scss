@@ -121,6 +121,9 @@
         &.active {
             opacity: 1; transform: scale(0);
         }
+        @include tablet {
+            display: none;
+        }
     }
     .cursor-follower {
         user-select: none; 
@@ -138,6 +141,9 @@
             opacity: 1; 
             transform: scale(2); 
             border:1px solid var(--orange);
+        }
+        @include tablet {
+            display: none;
         }
     }
 }

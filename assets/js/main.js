@@ -1,3 +1,15 @@
+//스크롤
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+//   console.log(e)
+})
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 800)
+})
 
 //로딩
 let loadingCursor = gsap.matchMedia();

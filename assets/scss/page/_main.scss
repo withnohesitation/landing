@@ -99,6 +99,12 @@
     a {
         cursor: none;
     }
+    @include tablet {
+        cursor: auto;
+        a {
+            cursor: pointer;
+        }
+    }
 
     .main-cursor {
         position: fixed;

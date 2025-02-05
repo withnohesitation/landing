@@ -411,6 +411,14 @@ body {
 .wrap-area a {
   cursor: none;
 }
+@media (max-width: 1024px) {
+  .wrap-area {
+    cursor: auto;
+  }
+  .wrap-area a {
+    cursor: pointer;
+  }
+}
 .wrap-area .main-cursor {
   position: fixed;
   top: 0;
